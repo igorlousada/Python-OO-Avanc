@@ -19,5 +19,4 @@ print(vingadores.duracao)
 playlist = [vingadores,breakingbad]
 
 for programa in  playlist:
-    detalhes = programa.duracao if hasattr(programa,'duracao') else programa.temporadas
-    print(f'{programa.nome} - {detalhes} - {programa.ano}')
+    programa.imprime()

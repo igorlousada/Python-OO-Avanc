@@ -29,6 +29,8 @@ class ClasseFilme(ClassePrograma):
    @duracao.setter
    def duracao(self,valor):
        self.__duracao = valor
+   def imprime(self):
+       print(f'{self.nome} - {self.duracao} - {self.ano}')    
        
 
 
@@ -42,7 +44,9 @@ class ClasseSerie(ClassePrograma):
         return self.__temporadas
     @temporadas.setter
     def temporadas(self,valor):
-        self.__temporadas = valor    
+        self.__temporadas = valor
+    def imprime(self):
+        print(f'{self.nome} - {self.temporadas} - {self.ano}')        
 
 
 
