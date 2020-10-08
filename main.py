@@ -21,4 +21,4 @@ my_playlist = ClassePlaylist('my_playlist',playlist)
 for programa in  my_playlist:
     print(programa)
 
-print(my_playlist.tamanho)        
+print(len(my_playlist))        
