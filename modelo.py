@@ -29,8 +29,8 @@ class ClasseFilme(ClassePrograma):
    @duracao.setter
    def duracao(self,valor):
        self.__duracao = valor
-   def imprime(self):
-       print(f'{self.nome} - {self.duracao} - {self.ano}')    
+   def __str__(self):
+       return f'{self.nome} - {self.duracao} - {self.ano}'    
        
 
 
@@ -45,8 +45,22 @@ class ClasseSerie(ClassePrograma):
     @temporadas.setter
     def temporadas(self,valor):
         self.__temporadas = valor
-    def imprime(self):
-        print(f'{self.nome} - {self.temporadas} - {self.ano}')        
+    def __str__(self):
+       return f'{self.nome} - {self.temporadas} - {self.ano}'        
+
+
+class ClassePlaylist(list):
+    def __init__(self,nome,programas):
+        self.__nome = nome
+        self._programas = programas
+    
+    @property
+    def listagem(self):
+        return self._programas
+
+    @property
+    def tamanho(self):
+        return len(self._programas)    
 
 
 

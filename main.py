@@ -1,4 +1,4 @@
-from modelo import ClasseFilme,ClasseSerie,ClassePrograma
+from modelo import ClasseFilme,ClasseSerie,ClassePrograma,ClassePlaylist
 
 vingadores = ClasseFilme('Vingadores - Guerra Infinita','2012',120)
 breakingbad = ClasseSerie('breaking bad','2008',5)
@@ -17,6 +17,8 @@ print(vingadores.duracao)
 
 
 playlist = [vingadores,breakingbad]
+my_playlist = ClassePlaylist('my_playlist',playlist)
+for programa in  my_playlist.listagem:
+    print(programa)
 
-for programa in  playlist:
-    programa.imprime()
+print(my_playlist.tamanho)        
