@@ -49,7 +49,7 @@ class ClasseSerie(ClassePrograma):
        return f'{self.nome} - {self.temporadas} - {self.ano}'        
 
 
-class ClassePlaylist(list):
+class ClassePlaylist():
     def __init__(self,nome,programas):
         self.__nome = nome
         self._programas = programas
