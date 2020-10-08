@@ -18,7 +18,7 @@ print(vingadores.duracao)
 
 playlist = [vingadores,breakingbad]
 my_playlist = ClassePlaylist('my_playlist',playlist)
-for programa in  my_playlist.listagem:
+for programa in  my_playlist:
     print(programa)
 
 print(my_playlist.tamanho)        
