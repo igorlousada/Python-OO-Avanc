@@ -2,5 +2,6 @@
 
 
 ## Assuntos abordados
-Herenças, Polimorfismo, Duck Typing
+Heranças, Polimorfismo, Duck Typing
+Heranças Múltiplcas, Resolução da ordem de chamada de métodos, Mixins
 
